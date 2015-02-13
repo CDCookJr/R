@@ -47,4 +47,7 @@ pcarat + geom_density(aes(fill = color)) + scale_x_continuous(limits = c(0, 3))
 p <- ggplot(mtcars, aes(factor(cyl), mpg))
 p+geom_violin(aes(fill = factor(cyl))) + geom_jitter(height = 0)
 
+#added code for new commit
+pcarat <- ggplot(data = diamonds, aes(x = carat))
+pcarat + geom_histogram()
                                                                         
