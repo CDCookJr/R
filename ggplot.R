@@ -50,4 +50,12 @@ p+geom_violin(aes(fill = factor(cyl))) + geom_jitter(height = 0)
 #added code for new commit
 pcarat <- ggplot(data = diamonds, aes(x = carat))
 pcarat + geom_histogram()
+
+# added more code for another commit
+pd0 <- ggplot(data = dsmall, aes(carat, price))
+pd1 <- pd0 + geom_point()
+pd1
+pd2 <- pd1 + geom_smooth()
+pd2
+pd1 + geom_smooth(span = 0.1)
                                                                         
